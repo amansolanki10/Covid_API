@@ -1,16 +1,16 @@
 # COVID Data
 
 This project provides two HTML pages to display and query COVID-19 data for India.
-
+API :-(`https://data.covid19india.org/data.json`).
 ## Overview
 
 - **Page 1: General COVID Data**
   - Displays a table of active cases, recovered cases, and death cases for each state in India.
-  - Data is fetched dynamically from an API (`https://data.covid19india.org/data.json`).
+  - Data is fetched dynamically from an API .
 
 - **Page 2: Historical Data Query**
   - Allows users to enter a specific date (YYYY-MM-DD) to retrieve daily COVID-19 statistics such as new cases and new deaths.
-  - Data is fetched and displayed dynamically from the same API (`https://data.covid19india.org/data.json`).
+  - Data is fetched and displayed dynamically from the same API.
 
 ## Technologies Used
 
