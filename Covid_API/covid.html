@@ -1,0 +1,50 @@
+<!-- 1 JULY 2024 TASK 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid</title>
+</head>
+
+<body>
+  <h2>COVID Data</h2>
+
+  <table id="tableBody" border="2" width="100%">
+    <tr>
+      <th>State Name</th>
+      <th>Active Cases</th>
+      <th>Recovered Cases</th>
+      <th>Death Cases</th>
+    </tr>
+  </table>
+  <script>
+    async function covidData() {
+      let url = "https://data.covid19india.org/data.json";
+      let data = await (await fetch(url)).json();
+
+      let statewiseData = data.statewise;
+
+      let tableBody = document.getElementById("tableBody");
+
+      for (let i = 0; i < statewiseData.length; i++) {
+        let state = statewiseData[i];
+
+        let row = document.createElement("tr");
+        row.innerHTML = `
+      <td>${state.state}</td>
+      <td>${state.active}</td>
+      <td>${state.recovered}</td>
+      <td>${state.deaths}</td>`;
+
+        tableBody.appendChild(row);
+      }
+    }
+
+    covidData();
+  </script>
+</body>
+
+</html>
