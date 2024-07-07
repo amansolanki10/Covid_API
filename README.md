@@ -1,7 +1,7 @@
 # COVID Data
 
 This project provides two HTML pages to display and query COVID-19 data for India.<br>
-API :-(`https://data.covid19india.org/data.json`).
+API Link:-https://data.covid19india.org/data.json
 ## Overview
 
 - **Page 1: General COVID Data**
